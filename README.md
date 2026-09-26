@@ -1,6 +1,6 @@
 Credit Worthiness Analysis
-===========================
-Explores the German Credit Risk dataset, prepares it for modeling,
+---
+This project explores the German Credit Risk dataset, prepares it for modeling,
 trains and compares four classification algorithms, and saves the
 final model plus its encoders for deployment in a Streamlit app.
 
@@ -8,9 +8,9 @@ Dataset source:
 - [Igor Trevelin, German Credit Risk], (https://www.kaggle.com/code/igortrevelin/german-credit-risk)
 """
 
-# =====================================================================
+---
 # STEP 1: ANALYSIS
-# =====================================================================
+---
 
 # Step 1.1: Import the libraries needed for data handling, plotting,
 # and later modeling.
@@ -191,9 +191,9 @@ target = "Risk"
 german_model = german[features + [target]].copy()
 print(german_model.head())
 
-# =====================================================================
+---
 # STEP 3: MODEL
-# =====================================================================
+---
 
 # Step 3.1: Import the tools needed for encoding and for saving
 # fitted objects to disk.
@@ -343,9 +343,9 @@ print(os.listdir())
 # files.download('Housing_encoder.pkl')
 # files.download('target_encoder.pkl')
 
-# =====================================================================
+---
 # STEP 4: WEB APPLICATION
-# =====================================================================
+---
 # The saved model (random_forest_credit_model.pkl) and the six saved
 # encoders (Sex, Housing, Saving accounts, Checking account, Job, and
 # target) are consumed by a separate Streamlit script, app.py, which
