@@ -1,4 +1,3 @@
-"""
 Credit Worthiness Analysis
 ===========================
 Explores the German Credit Risk dataset, prepares it for modeling,
